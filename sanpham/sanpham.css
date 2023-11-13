@@ -1,0 +1,241 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Marope:wght@500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Marope', sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+} */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+}
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 100vh;
+}
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin:0px 25px;
+}
+
+#menu .item a {
+    color:#626A67;
+    text-decoration: none;
+}
+
+
+#actions {
+    display: flex;
+}
+
+#actions .item {
+    margin-left:22px;
+}
+
+#wp-products {
+    padding-top:80px;
+    padding-bottom: 0px;
+    padding-left:80px;
+    padding-right:80px;
+    display: flex;
+    justify-content: center;
+}
+
+#wp-products .card {
+    width: 600px;
+    height:400px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+
+.card .thumb {
+    width: 250px;
+    height: 300px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.thumb img {
+    height: 250px;
+    width: 200px;
+    display: block;
+    margin:0px auto;
+    margin-top:17px;
+}
+
+.thumb {
+    width: 250px;
+    height: 400px;
+    z-index: 1;
+    transition: 0.8s all;
+}
+
+.desc {
+    width: 250px;
+    height: 300px;
+    background: #362f2f;
+    border-radius: 10px;
+    transition: 0.8s all;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.desc h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.desc .mon, .desc .topping {
+    font-weight: bold;
+    color: #fff; 
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 29px;
+}
+
+.desc p{
+    margin-left: 29px;
+    width: 206px;
+    font-size: 14px;
+    margin-top: 6px;
+    color: #fff;
+}
+
+.list-topping {
+    display: flex;
+    margin-left: 30px;
+    gap:15px;
+    margin-top: 13px;
+}
+
+.list-topping .change {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: balck;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.other-info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.price {
+    margin-left: 29px;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background:linear-gradient(90deg, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) ;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2af498 0%, #009efd 100%);
+}
+
+.card:hover .desc{
+    transform: translateX(125px);
+}
+
+.card:hover .thumb {
+    transform: translateX(-125px);
+}
+
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 322px;
+    margin-top:100px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#fff;
+}
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+}
