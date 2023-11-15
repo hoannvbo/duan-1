@@ -6,6 +6,17 @@
     cursor: pointer;
 }
 
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
 #wrapper {
     /* Kích thước màn hình là 1280 x 720 */
     width: 100%;
